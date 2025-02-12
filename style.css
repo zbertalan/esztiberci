@@ -84,3 +84,10 @@ p {
         background-size: cover;
     }
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    body {
+        background: url('images/background_mobile_rotated.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
