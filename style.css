@@ -79,9 +79,8 @@ p {
         font-size: 1em;
     }
 
-    /* Háttér optimalizálás mobilra */
     body {
-        background: url('images/background-mobile.png') no-repeat center center fixed;
+        background: url('images/background_mobile.png') no-repeat center center fixed;
         background-size: cover;
     }
 }
