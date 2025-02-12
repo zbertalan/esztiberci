@@ -33,24 +33,27 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.link-item a {
+    display: block;
+}
+
+.link-item img {
+    width: 60px; /* Állítsd be a kívánt méretet */
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.link-item img:hover {
+    transform: scale(1.1);
+}
+
+.link-item span {
+    margin-top: 5px;
     font-size: 1.2em;
     color: white;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 5px;
-    width: 120px;
-    text-align: center;
-    transition: background 0.3s;
-}
-
-.link-item i {
-    font-size: 2em;
-    margin-bottom: 5px;
-}
-
-.link-item:hover {
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Mobilnézet */
@@ -68,10 +71,12 @@ p {
         gap: 10px;
     }
 
-    .link-item {
-        width: 100px;
+    .link-item img {
+        width: 50px;
+    }
+
+    .link-item span {
         font-size: 1em;
-        padding: 10px;
     }
 
     /* Háttér optimalizálás mobilra */
